@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <script src="https://kit.fontawesome.com/f245899668.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <a href="/index"><i class="fa-solid fa-arrow-left indexPage"></i></a>
+            <div class="profile">
+
+                <div class="profile-image">
+
+                    <img src="/images/uploads/<%= user.profileImage  %>" alt="">
+
+                </div>
+
+                <div class="profile-user-settings">
+
+                    <h1 class="profile-user-name">
+                        <%= user.name%>
+                    </h1>
+                    <br>
+                    <h1 class="profile-user-name">
+                        <%= user.username%>
+                    </h1>
+                    <br>
+                    <a href="/edit" class="btn profile-edit-btn">Edit Profile</a>
+
+                    <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog"
+                            aria-hidden="true"></i></button>
+
+                </div>
+
+                <div class="profile-stats">
+
+                    <ul>
+                        <li><span class="profile-stat-count">164</span> posts</li>
+                        <li><span class="profile-stat-count">188</span> followers</li>
+                        <li><span class="profile-stat-count">206</span> following</li>
+                    </ul>
+
+                </div>
+
+                <div class="profile-bio">
+                    <p class="profile-real-name">
+                        <%=user.bio %>
+                    </p>
+                </div>
+
+            </div>
+            <!-- End of profile section -->
+
+        </div>
+        <!-- End of container -->
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <div class="gallery">
+
+                <% user.posts.forEach(function(postpics){ %>
+                    <div class="gallery-item" tabindex="0">
+
+                        <img src="/images/uploads/<%= postpics.picture %>" class="gallery-image" alt="">
+
+                        <div class="gallery-item-info">
+
+                            <ul>
+                                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i
+                                        class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i
+                                        class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <% }) %>
+
+
+
+            </div>
+            <!-- End of gallery -->
+
+            <div class="loader"></div>
+
+        </div>
+        <!-- End of container -->
+
+    </main>
+</body>
+
+</html>

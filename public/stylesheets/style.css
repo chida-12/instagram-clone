@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+
+header {
+  border: 1px solid #262626;
+  height: 100%;
+  width: 6%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* border: 2px solid yellow; */
+}
+
+.instagram {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+.instagram-icon {
+  color: white;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 25px;
+  gap: 11px;
+  position: relative;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.feeds {
+  width: 100%;
+  height: 100px;
+  /* border: 2px solid white; */
+  position: relative;
+  padding: 5px;
+  margin-bottom: 35px;
+}
+
+.story-container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  position: absolute;
+  left: 27px;
+  top: 7px;
+}
+
+.story {
+  width: 80px;
+  text-align: center;
+}
+
+.story img {
+  width: 80%;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(to right, #E54665, #F7994B);
+}
+
+.user {
+  display: block;
+  margin-top: 2px;
+  font-size: 10px;
+  color: white;
+}
+
+
+.outer-card {
+  border-bottom: 1px solid gray;
+  width: 400px;
+  height: 100%;
+  padding: 8px;
+}
+
+
+.user-name {
+  margin-top: 2px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  margin-top: -2px;
+}
+
+form input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+
+}
+
+.view {
+  color: gray;
+}
+
+.small-profile {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.single-dot {
+  color: gray;
+}
+
+.time {
+  color: gray;
+}
+
+.heart {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.dots {
+  color: white;
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.small-profile img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(to right, #E54665, #F7994B);
+}
+
+.post-user img {
+  width: 100%;
+  border-radius: 14px;
+  position: relative;
+  border: 1px solid whitesmoke;
+  padding: 0 10px;
+}
+
+.right-corn {
+  position: absolute;
+  right: 30px;
+}
+
+.social {
+  padding: 5px 0;
+  position: relative;
+}
+
+.main-point {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20%;
+  gap: 30px;
+}
+
+.post-description {
+  color: white;
+  padding: 7px 3px;
+  text-align: justify;
+}
+
+.right {
+
+  border: 2px solid green;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.center {
+  /* border: 2px solid red; */
+  min-width: 1134px;
+  min-height: 1200px;
+  position: absolute;
+  left: 70px;
+  top: 0;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.lift {
+  width: 750px;
+  min-height: 1200px;
+
+}
+
+.rifht {
+  width: 370px;
+  height: 590px;
+  /* border: 2px solid green; */
+  padding: 10px;
+}
+
+.right-arrow {
+  color: white;
+  text-align: center;
+}
+
+.right-suggesbox {
+  color: white;
+  cursor: pointer;
+}
+
+.user-id {
+  color: gray;
+}
+
+.right-story {
+  width: 345px;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.right-story img {
+
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.switch {
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: skyblue;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.switch:hover {
+  color: white;
+}
+
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sugge-p {
+  color: white;
+}
+
+.sugge-h3 {
+  color: gray;
+}
+
+
+.sugge {
+  width: 345px;
+  height: 380px;
+  padding: 10px;
+}
+
+.sugge-profiles {
+  width: 325px;
+  height: 70px;
+  /* padding: 10px; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 3px;
+  align-items: center;
+  position: relative;
+}
+
+.sugge-profiles img {
+  width: 14%;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.footer {
+  width: 345px;
+  height: 93px;
+  /* border: 2px solid wheat; */
+  padding: 4px 19px;
+}
+
+.gray {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+  font-family: 200;
+}
+
+.copy {
+  margin-top: 25px;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+
+
+.uplode-posts {
+  width: 400px;
+  height: 400px;
+  background: #262626;
+  position: absolute;
+  top: 34px;
+  left: 425px;
+  border-radius: 14px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.uplode-posts form input {
+  width: 50%;
+
+}
+
+.uplode-posts svg {
+  /* padding: 20px; */
+  width: 100%;
+  color: white;
+}
+
+.uplode-text {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.uplode-head {
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  padding: 16px 0;
+  color: white;
+}
+
+.upload-btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 23px;
+  font-size: 20px;
+  background-color: rgb(57, 156, 196);
+  color: white;
+  cursor: pointer;
+}
+
+.cross {
+  font-size: 22px;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+}
+
+.story::-webkit-scrollbar {
+  display: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+#text {
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.indexPage {
+  color: white;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
